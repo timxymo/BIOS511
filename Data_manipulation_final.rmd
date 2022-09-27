@@ -777,7 +777,7 @@ course <- data.frame(
 employee <- data.frame(
   emp_name = c("Y. Liu", "Y. Liu", "K. Glasner", "K. Glasner", "N. Hao", "N. Hao", "J. Cheng", "D. Billheimer", "L. Kunyansky", "L. Kunyansky", "L. Kunyansky"),
   emp_office = c("123", "123", "234", "234", "345", "345", "456", "567", "678", "678", "678"),
-  emp_aff = c("STATS", "BIOS", "MATH", "APPL", "MATH", "STATS", "SIE", "BIOS", "MATH", "APPL", "BIOS")
+  emp_aff = c("STAT", "BIOS", "MATH", "APPL", "MATH", "STAT", "SIE", "BIOS", "MATH", "APPL", "BIOS")
 )
 ```
 

@@ -560,16 +560,16 @@ filter(flights, month == 1, day == 1)</code></pre>
 <pre><code>## # A tibble: 10 × 19
 ##     year month   day dep_time sched_de…¹ dep_d…² arr_t…³ sched…⁴ arr_d…⁵ carrier
 ##    &lt;int&gt; &lt;int&gt; &lt;int&gt;    &lt;int&gt;      &lt;int&gt;   &lt;dbl&gt;   &lt;int&gt;   &lt;int&gt;   &lt;dbl&gt; &lt;chr&gt;  
-##  1  2013    10     6       NA       1717      NA      NA    1908      NA EV     
-##  2  2013     8    11     1857       1900      -3    2212    2240     -28 DL     
-##  3  2013    11    25      800        800       0     859     910     -11 AA     
-##  4  2013     3    24      830        810      20    1030    1037      -7 9E     
-##  5  2013     4    24     1559       1610     -11    1808    1758      10 9E     
-##  6  2013    12    12      559        604      -5     834     838      -4 EV     
-##  7  2013     5    16      832        835      -3    1100    1037      23 EV     
-##  8  2013     3     3     1645       1545      60    1942    1910      32 AA     
-##  9  2013    10    22     1022       1030      -8    1304    1252      12 DL     
-## 10  2013     1     2     1156       1200      -4    1254    1320     -26 UA     
+##  1  2013     9    20      842        830      12    1026    1018       8 EV     
+##  2  2013     6    15      803        725      38     957     933      24 EV     
+##  3  2013     3     9      558        600      -2     709     733     -24 UA     
+##  4  2013    11    23      853        742      71    1035     924      71 EV     
+##  5  2013     3     9     1719       1720      -1    2005    2040     -35 AA     
+##  6  2013    10    17     1652       1700      -8    1744    1815     -31 US     
+##  7  2013     1    31       NA       1703      NA      NA    1810      NA EV     
+##  8  2013     5    25     1126       1130      -4    1250    1311     -21 EV     
+##  9  2013     5    15     1406       1415      -9    1555    1610     -15 MQ     
+## 10  2013     6    22      603        605      -2     713     721      -8 EV     
 ## # … with 9 more variables: flight &lt;int&gt;, tailnum &lt;chr&gt;, origin &lt;chr&gt;,
 ## #   dest &lt;chr&gt;, air_time &lt;dbl&gt;, distance &lt;dbl&gt;, hour &lt;dbl&gt;, minute &lt;dbl&gt;,
 ## #   time_hour &lt;dttm&gt;, and abbreviated variable names ¹​sched_dep_time,
@@ -582,16 +582,16 @@ filter(flights, month == 1, day == 1)</code></pre>
 <pre><code>## # A tibble: 33,678 × 19
 ##     year month   day dep_time sched_de…¹ dep_d…² arr_t…³ sched…⁴ arr_d…⁵ carrier
 ##    &lt;int&gt; &lt;int&gt; &lt;int&gt;    &lt;int&gt;      &lt;int&gt;   &lt;dbl&gt;   &lt;int&gt;   &lt;int&gt;   &lt;dbl&gt; &lt;chr&gt;  
-##  1  2013     5     3     1258       1250       8    1540    1535       5 WN     
-##  2  2013     2    25     2048       2040       8    2351    2343       8 B6     
-##  3  2013     9    24      920        929      -9    1226    1234      -8 AA     
-##  4  2013     5     7     1455       1500      -5    1602    1612     -10 US     
-##  5  2013     2    24     1448       1455      -7    1724    1727      -3 EV     
-##  6  2013     8    17      645        630      15     941     927      14 UA     
-##  7  2013    11    14     1527       1529      -2    1811    1835     -24 UA     
-##  8  2013     4    26     1834       1815      19    2022    1955      27 MQ     
-##  9  2013     6    18     1855       1829      26    2122    2033      49 US     
-## 10  2013     6    28     2209       2025     104     113    2321     112 B6     
+##  1  2013    11    17     1143       1154     -11    1418    1409       9 EV     
+##  2  2013     1    30      825        830      -5    1020    1023      -3 9E     
+##  3  2013     2    27     1039       1000      39    1315    1239      36 DL     
+##  4  2013    12    27     1628       1619       9    1737    1737       0 EV     
+##  5  2013     1    13     1955       2000      -5    2127    2117      10 US     
+##  6  2013    10    23     1443       1450      -7    1637    1645      -8 MQ     
+##  7  2013     9    11     1102       1105      -3    1408    1418     -10 DL     
+##  8  2013    12     4     1955       2000      -5    2347    2325      22 VX     
+##  9  2013    11     7     1600       1430      90    1738    1609      89 UA     
+## 10  2013     2     6     1637       1640      -3    1851    1850       1 MQ     
 ## # … with 33,668 more rows, 9 more variables: flight &lt;int&gt;, tailnum &lt;chr&gt;,
 ## #   origin &lt;chr&gt;, dest &lt;chr&gt;, air_time &lt;dbl&gt;, distance &lt;dbl&gt;, hour &lt;dbl&gt;,
 ## #   minute &lt;dbl&gt;, time_hour &lt;dttm&gt;, and abbreviated variable names
@@ -1963,7 +1963,7 @@ course &lt;- data.frame(
 employee &lt;- data.frame(
   emp_name = c(&quot;Y. Liu&quot;, &quot;Y. Liu&quot;, &quot;K. Glasner&quot;, &quot;K. Glasner&quot;, &quot;N. Hao&quot;, &quot;N. Hao&quot;, &quot;J. Cheng&quot;, &quot;D. Billheimer&quot;, &quot;L. Kunyansky&quot;, &quot;L. Kunyansky&quot;, &quot;L. Kunyansky&quot;),
   emp_office = c(&quot;123&quot;, &quot;123&quot;, &quot;234&quot;, &quot;234&quot;, &quot;345&quot;, &quot;345&quot;, &quot;456&quot;, &quot;567&quot;, &quot;678&quot;, &quot;678&quot;, &quot;678&quot;),
-  emp_aff = c(&quot;STATS&quot;, &quot;BIOS&quot;, &quot;MATH&quot;, &quot;APPL&quot;, &quot;MATH&quot;, &quot;STATS&quot;, &quot;SIE&quot;, &quot;BIOS&quot;, &quot;MATH&quot;, &quot;APPL&quot;, &quot;BIOS&quot;)
+  emp_aff = c(&quot;STAT&quot;, &quot;BIOS&quot;, &quot;MATH&quot;, &quot;APPL&quot;, &quot;MATH&quot;, &quot;STAT&quot;, &quot;SIE&quot;, &quot;BIOS&quot;, &quot;MATH&quot;, &quot;APPL&quot;, &quot;BIOS&quot;)
 )</code></pre>
 </div>
 <div id="set-operations" class="section level2">
